@@ -1,0 +1,28 @@
+
+
+.red, .blue, .green, .peachpuff {
+	height: 100%;
+	width: 25%;
+	display: inline-block;
+}
+
+.red{
+	background-color: red;
+}
+.blue {
+	background-color: blue;
+
+}
+.green {
+	background-color: green;
+}
+.peachpuff {
+	background-color: peachpuff;
+}
+.boxcontainer {
+width: 800px;
+height: 200px;
+}
+.Acontainer {
+	display: inline-block;
+}

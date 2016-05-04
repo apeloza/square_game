@@ -4,6 +4,10 @@ $(document).ready(function(){
 //Four boxes are added to the DOM. They do not currently have any colours.
 $('.boxcontainer').append('<div class="box1 box"></div><div class="box2 box"></div><div class="box3 box"></div><div class="box4 box"></div>')
 
+//These lines ensure that the boxes are always initialized as squares regardless of the size of the browser window.
+var $box = $('.box');
+	$box.height($box.width());
+	
 //Two functions are called. The first randomizes the box colours, and the second generates our initial colour question (see below for further explanation).
 randomBoxes();
 colorQ();

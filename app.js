@@ -26,8 +26,11 @@ function checkAnswer(){
 //This checks to see if the user's answer has the same color-data as the one the question is currently holding onto.
 if ($(this).data('color') == $('.Qcontainer').data('color')){
 
+  //This line animates the box to display a rainbow animation
+$(this).addClass('rainbowbox');
+
 		//User is alerted of their correct answer, which also pauses the page
-		alert("Correct!");
+alert("Correct!");
 
     //The score is updated
     scoreCounter++;
@@ -95,4 +98,13 @@ quizArray.push(colorsArray[randomNum]);
 //The boxes are sized to be squares on the screen.
 var $box = $('.box');
   $box.height($box.width());
+}
+
+function sleep(milliseconds) {
+  var start = new Date().getTime();
+  for (var i = 0; i < 1e7; i++) {
+    if ((new Date().getTime() - start) > milliseconds){
+      break;
+    }
+  }
 }

@@ -20,7 +20,7 @@ body {
 	text-align:center;
 }
 
-.answer, .question {
+.answer, .question, .counter {
 	color: white;
 	font-size: 20px;
 	margin-top: 20px;
